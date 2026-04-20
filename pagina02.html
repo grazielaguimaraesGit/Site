@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de inscrição</title>
+</head>
+<body>
+    
+
+
+    <header>
+        <h1>Formulário</h1>
+        <nav>
+            <ul>
+                <li><a href="primeira_pagina.html">Voltar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Cadastro</h2>
+
+        <form action="">
+            <label for="nomeCompleto">Nome completo: </label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required><br>
+       
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required><br>
+            
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" required><br>
+
+            <label for="materia">Selecione a matéria que deseja lecionar: </label>
+            <select name="materia" id="materia">
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="biologia">Biologia</option>
+                <option value="ciencias">Ciências</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                <option value="artes">Artes</option>
+            </select>
+
+            <br>
+
+
+            <label for="escolaridade">Nível de Escolaridade</label>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="superiorCompleto">Ensino Superior</option>
+                    <option value="cursandoMestrado">Cursando mestrado</option>
+                    <option value="mestradoComepleto">Mestrado Completo</option>
+                    <option value="cursandoDoutorado">Cursando Doutorado</option>
+                    <option value="doutoradoCompleto">Doutorado Completo</option>
+                </select>
+            
+
+                <br>
+
+            <label for="descricao">Quem sou</label>
+            <textarea name="descricao" id="descricao" required></textarea>
+
+            <br>
+
+            <input type="checkbox" name="news" id="news">
+            <label for="news">Desejo Receber Promoções</label>
+
+            <input type="submit" value="Enviar" onclick="enviarDados()">
+
+        </form>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+
+        <ul>
+            <li><a href="mailto:emailfalso@gmail.com">emailfalso@gmail.com</a></li>
+            <li><a href="tel:+554800000000">480000-0000</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Graziela Guimarães</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
