@@ -1,0 +1,11 @@
+
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+
+    /*Vai colocar ele na posição 0 do topo da página*/
+    top: 0;
+    background-color: antiquewhite;
+    padding: 5px;
+    font-size: 15px;
+}

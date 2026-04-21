@@ -1,0 +1,78 @@
+
+
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /*Div principal*/
+    .container {
+      display: grid;
+      grid-template-areas:
+
+      /*O cabeçalho vai ocupar toda a largura*/
+        "cabecalho cabecalho cabecalho"
+      /*A nav vai ocupar toda a largura*/  
+        "navegacao navegacao navegacao"
+    
+        /*Aqui será uma parte da barra, outra do conteúdo e a outra da outra barra*/
+        "barra-lateral-esquerda conteudo barra-lateral-direita"
+        
+        /*O rodapé vai ocupar a largura total*/
+        "rodape rodape rodape";
+      
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      height: 100vh;
+    }
+
+    /*Cabeçalho*/
+    .cabecalho {
+      /*O grid-area possibilita colocar "apelidos" nas tags*/  
+      grid-area: cabecalho;
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /*Menu de navegação*/
+    .navegacao {
+      grid-area: navegacao;
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+   
+
+    /*Barra lateral esquerda*/
+    .barra-lateral-esquerda {
+      grid-area: barra-lateral-esquerda;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    /*Conteúdo principal*/
+    .conteudo {
+      grid-area: conteudo;
+      background: #fff;
+      padding: 20px;
+    }
+
+    /*Barra lateral direita*/
+    .barra-lateral-direita {
+      grid-area: barra-lateral-direita;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    /*Rodapé*/
+    #rodape {
+      grid-area: rodape;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
