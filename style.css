@@ -1,10 +1,44 @@
 
-/*Resetando as estilizações do site*/
+/*Resetando as estilizações do site - Seletor universal */
 * {
     margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+   
 }
 
+/*seletor de id*/
+#titulo {
+    color: red;
+    font-size: 25px;
+}
 
+/*seletor de classe*/
+.paragrafo {
+    font-style: italic;
+    color: green;
+    font-size: 10px;
+}
+
+/* p é o irmão adjacente do a, apenas o primeiro link vai receber essa estilização*/
+p + a {
+    color: green;
+}
+
+/*Qualquer link que venha depois do parágrafo*/
+p ~ a {
+    font-size: 35px;
+}
+
+/*Todos os links que (forem filhos), estiverem dentro do parágrafo*/
+p > a {
+    color: yellow;
+}
+
+/*pseudo-classe - quando o mouse passar sobre o link*/
+a:hover {
+    color: rgb(15, 65, 109);
+}
+
+/*seletor de atributo - apenas a tag que estiver esse atributo*/
+img[src] {
+    width: 500px;
+}

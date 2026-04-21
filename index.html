@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC TEC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
+<!--Cabeçalho-->
 <header>
-    <h1>Graziela</h1>
+    <!--Vai ser estilizado no CSS pelo id #titulo-->
+    <h1 id="titulo">Graziela</h1>
+    <!--Vai ser estilizado no CSS pela classe paragráfo-->
+    <p class="paragrafo">Parágrafo</p>
+    <p>Parágrafo2</p>
+
+
+    <p><a href="">link dentro do p</a></p>
 
     <!--Navegação-->
     <nav>
+        <!--Lista não ordenada-->
         <ul>
-            <li><a href="#quemsomos">Quem somos</a></li>
+            <!--tem da lista-->
+            <li>
+                <!--Link interno-->
+                <a href="#quemsomos">Quem somos</a>
+            </li>
+
             <li>Contato</li>
             <li>Serviços</li>
-            <li>Localização</li>
+            <li>
+                <!--Link externo-->
+                <a href="https://google.com.br">Google</a>
+            </li>
+
             <li><a href="pagina02.html">Ir para cadastro</a></li>
         </ul>
     </nav>
@@ -25,6 +43,7 @@
     <section id="quemsomos">
         <h2>Quem somos</h2>
 
+        <!--Link externo de imagem-->
         <img src="https://unsplash.com/pt-br/fotografias/pulverizacao-do-veiculo-automovel-preto-moderno-ser-limpo-pela-mulher-dentro-da-estacao-de-lavagem-de-carros-WxJUTijrxac" alt="LavaCar">
     
         <article>
@@ -45,8 +64,13 @@
 
 
     <section>
-        <h2>Nossos serviços</h2>
+        <h4>Nossos serviços</h4>
 
+        <p>Testando seletores diferentes</p>
+
+        <a href="#">teste</a>
+
+        <!--Tabela-->
         <table>
             <thead>
                 <tr>
@@ -73,6 +97,7 @@
     <section>
         <h2>Contato</h2>
 
+        <!--Formulário-->
         <form action="">
             <label for="nome">Nome: </label>
             <input type="text" id="nome" name="nome"> <br>
