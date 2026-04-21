@@ -1,0 +1,32 @@
+
+.container {
+
+    background-color: aquamarine;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.caixa {
+    border: 1px solid #000;
+}
+
+#caixa1 {
+
+    height: 100px;
+    background-color: yellowgreen;
+    width: 100px;
+}
+
+#caixa2 {
+    height: 100px;
+    background-color: violet;
+width: 100px;
+}
+
+#caixa3 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(13, 77, 70);
+}
