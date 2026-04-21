@@ -1,25 +1,14 @@
 
-
-.inline {
-    color: red;
-    background-color: bisque;
-    padding: 5px;
-    margin: 10px;
-    display: inline;
+.imagem-flutuante {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.block {
-    color: pink;
-    background-color: brown;
-    padding: 30px;
-    margin: 40px;
-    display: block;
-}
-
-.inline-block {
-    color: grey;
+/*vai ignorar o left da imagem*/
+.texto-com-clear {
+    clear: left;
     background-color: aquamarine;
-    padding: 1px;
-    margin: 35px;
-    display: inline-block;
 }
+
