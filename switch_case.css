@@ -11,4 +11,8 @@
 }
 
 
-
+.reset {
+    width: 150px;
+    border: 1px solid #000;
+    height: 120px;
+}
