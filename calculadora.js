@@ -1,13 +1,27 @@
 
 /*Calculadora*/
 
-function calc(tipo, valor){
 
-    if(tipo === 'numero') {
 
+function cal(tipo, valor){
+
+   //Estpa dando erro
+    //Verificando os valores vindos por parâmentro
+    if(tipo == 'numero') {
+
+        switch(valor) {
+
+            
+            case '1':
+            document.getElementById('tela').value = '1'
+            break
+
+            default:
+                tela.value = 'Erro'
+        }
     } 
 
     else{
-        //Faz algo caso seja um operador
+        alert('erro') //Faz algo caso seja um operador
     }
 }
