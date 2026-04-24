@@ -18,6 +18,8 @@ function cal(tipo, valor) {
     //Estpa dando erro
     //Verificando os valores vindos por parâmentro
 
+
+
     if (tipo == 'numero') {
 
         switch (valor) {
