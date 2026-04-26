@@ -22,4 +22,23 @@ let tamanho_length = frutas.length - 1
 console.log(tamanho_length)
 
 
+for(let f in frutas){
+    console.log(`Fruta ${f}: ${frutas[f]}`)
+}
+
+let lista = document.getElementById('lista')
+
+
+
+
+
+for(let li in frutas){
+
+  
+ lista.innerHTML += `Fruta: ${frutas[li]}<br>`
+   
+    
+
+}
+
 
