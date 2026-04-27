@@ -22,7 +22,7 @@ let tamanho_length = frutas.length - 1
 console.log(tamanho_length)
 
 
-//Começa com 0 e a cada iteração, incrementa 1
+//Começa com 1 e a cada iteração, incrementa 1
 let contador = 1;
 
 while(contador <= 10){
