@@ -2,7 +2,7 @@
 let frutas = []
 
 //Inserir cinco frutas
-frutas.push('Mação', 'Banana', 'Carambola', 'Amora', 'Ameixa')
+frutas.push('Maçã', 'Banana', 'Carambola', 'Amora', 'Ameixa')
 console.log(frutas)
 
 //acessar o terceiro item e exibi-lo
@@ -22,6 +22,23 @@ let tamanho_length = frutas.length - 1
 console.log(tamanho_length)
 
 
+//Começa com 0 e a cada iteração, incrementa 1
+let contador = 1;
+
+while(contador <= 10){
+    console.log('Contador: ' + contador)
+    //Incrementando
+    contador++
+}
+
+let dd = 1
+
+do {
+    console.log(`Do while: ${dd} `)
+    dd++
+} while (dd <= 10) 
+    
+
 for(let f in frutas){
     console.log(`Fruta ${f}: ${frutas[f]}`)
 }
@@ -35,10 +52,10 @@ let lista = document.getElementById('lista')
 for(let li in frutas){
 
   
- lista.innerHTML += `Fruta: ${frutas[li]}<br>`
-   
-    
-
+ lista.innerHTML += `
+ <ul>
+<li> Fruta: ${frutas[li]}</li>
+</ul>` 
 }
 
 
