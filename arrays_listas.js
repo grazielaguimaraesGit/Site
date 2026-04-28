@@ -36,7 +36,7 @@ let dd = 1
 do {
     console.log(`Do while: ${dd} `)
     dd++
-} while (dd <= 10) 
+} while (dd <= frutas.length) 
     
 
 for(let f in frutas){
@@ -58,4 +58,29 @@ for(let li in frutas){
 </ul>` 
 }
 
+
+//FOR of
+for (const elemento of frutas) {
+    console.log(`Element: ${elemento}`)
+}
+
+//for in
+for (const fruta in frutas) {
+   
+    console.log(`Fruta for in: ${frutas[fruta]}`)
+}
+
+
+/*Corrigir
+function criarSecao(titulo, conteudo) {
+
+   
+
+    let paragrafo = document.createElement('p')
+
+    paragrafo.innerHTML = `Título: ${titulo}, Conteúdo:
+    ${conteudo}`
+}
+
+criarSecao('Me chamo título', 'Sou o conteúdo') */
 
