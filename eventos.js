@@ -13,14 +13,13 @@ let mudaCorFonte = (objetoHTML, cor) => {
 }
 
 
-let paragrafo = document.getElementById('paragrafo')
-paragrafo.style.display = 'none'
+
 
 //Recebe as duas funções
 fundo_preto.addEventListener('mouseout', () => {
     mudaCorFundo(document.body, '#000')
     mudaCorFonte(document.body, '#FFF')
-   // setarClasseCSS(paragrafo, 'p')
+   
 })
 
 //Recebe e seta uma classe css para o elemento
@@ -33,6 +32,8 @@ let setarClasseCSS = (objetoHTML, classeCSS) => {
 //Exercício proposto - aula 25
 let selectHTML = document.getElementById('pedido')
 
+let paragrafo = document.getElementById('paragrafo')
+paragrafo.style.visible = false
 
 
 
@@ -66,17 +67,22 @@ selectHTML.addEventListener('change', () => {
 
 })
 
-  paragrafo.style.display = 'block'
+//Corrigir erros
+  paragrafo.style.visible = true
 
 //Criando um objeto
 let cliente = {
+    id:1,
     nome: 'Graziela',
     mesa: 7,
-    pedido: resultado
+    pedido: 'Em andamento'
 }
 
+
 for(let c  in cliente) {
-    paragrafo.innerHTML = `Cliente: ${cliente.nome}, Mesa: ${cliente.mesa}
+
+ 
+    paragrafo.innerHTML = `Cliente: ${cliente.id} - ${cliente.nome}, Mesa: ${cliente.mesa}
     Pedido: ${cliente.pedido}`
 }
 
