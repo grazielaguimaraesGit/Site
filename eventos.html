@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+
+    <link rel="stylesheet" href="eventos.css">
+
+    <!--CSS INTERNO-->
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            height: 300px;
+            background-color: wheat;
+
+        }
+
+        .btn {
+
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .input_cor{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    <button class="btn" id="fundo_preto">Fundo Preto - Cor Branca</button>
+
+    <input type="text"
+    placeholder="Digite uma cor"
+    id="input_cor"
+    class="input_cor"
+    >
+
+    </div>
+
+    <p id="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum animi minima labore, fuga magnam soluta a corrupti commodi dolorem quisquam. Amet rerum, modi provident quaerat nemo a ex dolorem!</p>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
